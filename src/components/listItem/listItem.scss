@@ -1,0 +1,85 @@
+.listItem {
+  width: 225px;
+  height: 120px;
+  background-color: var(--main-color);
+  margin-right: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  color: #fff;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s ease;
+  }
+
+  video {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:hover {
+    width: 325px;
+    height: 300px;
+    position: absolute;
+    top: -150px;
+    box-shadow: 10px 8px 100px rgba(0, 0, 0, 0.082),
+      12px 8px 12px rgba(0, 0, 0, 0.14), 4px 4px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+
+    img {
+      height: 140px;
+    }
+
+    .itemInfo {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+
+      .icons {
+        display: flex;
+        margin-bottom: 10px;
+
+        .icon {
+          padding: 5px;
+          border-radius: 50%;
+          border: 2px solid #fff;
+          margin-right: 5px;
+          font-size: 26px;
+        }
+      }
+
+      .itemInfoTop {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: gray;
+
+        .limit {
+          border: 1px solid gray;
+          padding: 1px 5px;
+          margin: 0 10px;
+          border-radius: 2px;
+        }
+      }
+
+      .desc {
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+
+      .genre {
+        font-size: 14px;
+        color: lightgray;
+      }
+    }
+  }
+}

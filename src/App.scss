@@ -1,5 +1,5 @@
 :root {
-  --main-color: #0b0b0b;
+  --main-color: #212121;
   --secondary-color: #e50914;
 }
 
@@ -10,3 +10,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body:after {
+  display: none;
+  content: url("./components/listItem/item.avif");
+  // url("path/to/another-image-hovered.jpg");
+}
+
+// poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
