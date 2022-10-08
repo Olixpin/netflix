@@ -1,10 +1,13 @@
 import "./App.scss";
+import ErrorBoundary from "./ErrorBoundary";
 import Home from "./home/Home";
 
 const App = () => {
   return (
     <div>
-      <Home />
+      <ErrorBoundary>
+        <Home />
+      </ErrorBoundary>
     </div>
   );
 };
