@@ -1,5 +1,6 @@
 import "./App.scss";
 import ErrorBoundary from "./ErrorBoundary";
+import Register from "./pages/register/Register";
 import Home from "./pages/home/Home";
 import Watch from "./pages/watch/Watch";
 
@@ -8,7 +9,8 @@ const App = () => {
     <div>
       <ErrorBoundary>
         {/* <Home /> */}
-        <Watch />
+        {/* <Watch /> */}
+        <Register />
       </ErrorBoundary>
       {/* video */}
     </div>
